@@ -1,5 +1,5 @@
 import { useEffect, useState, type MouseEvent } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Sigma, Atom, Languages, ArrowRight } from "lucide-react";
 import { useTest, type Subject } from "../context/TestContext";
 import logo from "../assets/logo.png";
@@ -57,15 +57,16 @@ export default function SubjectSelect() {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center px-6 py-16 overflow-hidden">
       <PageBackground />
-      <div
-        className="w-40 h-24 rounded-[25px] flex items-center justify-center mb-10"
+      <Link
+        to="/"
+        className="w-40 h-24 rounded-[25px] flex items-center justify-center mb-10 hover:scale-105 transition-transform"
         style={{
           backgroundColor: "#0D0C08",
           animation: "fadeUp 0.5s ease-out both",
         }}
       >
         <img src={logo} alt="Afrasiab University" className="w-30" />
-      </div>
+      </Link>
 
       <p
         className="text-[var(--accent)] text-sm mb-3 tracking-wide"
