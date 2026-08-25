@@ -2,6 +2,9 @@
 
 Afrasiab University uchun frontend developer test topshirig'i doirasida yaratilgan loyiha: qabul jarayoniga bag'ishlangan landing sahifa va ko'p fanli kirish testi.
 
+🔗 **Jonli demo:** [afrasiab-university.vercel.app](https://afrasiab-university.vercel.app)
+📂 **Repository:** [github.com/fazliddin022/afrasiab-university](https://github.com/fazliddin022/afrasiab-university)
+
 ## Xususiyatlar
 
 - **Landing sahifa** — universitet haqida, statistikalar (scroll-triggered count-up animatsiya), fakultetlar, qabul jarayoni bosqichlari
