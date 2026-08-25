@@ -1,5 +1,5 @@
 import { useEffect, useMemo } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Check, X, RotateCcw, Download } from "lucide-react";
 import { useTest } from "../context/TestContext";
 import { questionsBySubject } from "../data/questions";
@@ -84,12 +84,13 @@ export default function ResultPage() {
       <PageBackground />
       <div className="relative px-6 py-12 md:py-16 max-w-2xl mx-auto">
         <div className="flex flex-col items-center text-center mb-12">
-          <div
-            className="w-40 h-24 rounded-[25px] flex items-center justify-center mb-6"
+          <Link
+            to="/"
+            className="w-40 h-24 rounded-[25px] flex items-center justify-center mb-6 hover:scale-105 transition-transform"
             style={{ backgroundColor: "#0D0C08" }}
           >
             <img src={logo} alt="Afrasiab University" className="w-30" />
-          </div>
+          </Link>
           <p className="text-[var(--accent)] text-sm mb-2 tracking-wide">
             {subjectLabels[subject]} - Test yakunlandi
           </p>
