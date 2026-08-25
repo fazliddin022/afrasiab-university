@@ -1,0 +1,36 @@
+import type { Question } from './types'
+
+const physics: Question[] = [
+  { question: 'Nyutonning 1-qonuni nima haqida?', options: ['Kuch va massa', 'Inersiya', 'Ta\'sir va aks ta\'sir', 'Energiya saqlanishi'], correctIndex: 1 },
+  { question: 'Tezlik formulasi qanday?', options: ['v = s/t', 'v = s \u00d7 t', 'v = t/s', 'v = s + t'], correctIndex: 0 },
+  { question: 'Erkin tushish tezlanishi taxminan nechaga teng (m/s\u00b2)?', options: ['8.9', '9.8', '10.5', '11.2'], correctIndex: 1 },
+  { question: 'Kuch qaysi birlikda o\'lchanadi?', options: ['Joul', 'Vatt', 'Nyuton', 'Paskal'], correctIndex: 2 },
+  { question: 'F = ma formulasi nimani ifodalaydi?', options: ['Energiya', 'Kuch', 'Tezlik', 'Bosim'], correctIndex: 1 },
+  { question: 'Energiyaning saqlanish qonuni nimani anglatadi?', options: ['Energiya yo\'qoladi', 'Energiya boshqa turga o\'tadi, yo\'qolmaydi', 'Energiya faqat issiqlikka aylanadi', 'Energiya doim ortadi'], correctIndex: 1 },
+  { question: 'Yorug\'lik tezligi vakuumda taxminan qancha (km/s)?', options: ['150,000', '300,000', '3,000,000', '30,000'], correctIndex: 1 },
+  { question: 'Elektr toki qaysi birlikda o\'lchanadi?', options: ['Volt', 'Amper', 'Om', 'Vatt'], correctIndex: 1 },
+  { question: 'Om qonuni formulasi qanday?', options: ['U = IR', 'U = I/R', 'I = UR', 'R = UI'], correctIndex: 0 },
+  { question: 'Massa va vazn bir xil narsami?', options: ['Ha, doim', 'Yo\'q, vazn kuch, massa moddaning miqdori', 'Vazn massaga teng', 'Ikkalasi ham energiya'], correctIndex: 1 },
+  { question: 'Issiqlik uzatilishining qaysi turi vakuumda ham sodir bo\'ladi?', options: ['O\'tkazuvchanlik', 'Konveksiya', 'Nurlanish', 'Hech biri'], correctIndex: 2 },
+  { question: 'Kinetik energiya formulasi qanday?', options: ['mgh', '\u00bdmv\u00b2', 'mv', 'ma'], correctIndex: 1 },
+  { question: 'Suv qaysi haroratda qaynaydi (normal bosimda, \u00b0C)?', options: ['90', '100', '110', '120'], correctIndex: 1 },
+  { question: 'Amper nimani o\'lchaydi?', options: ['Kuchlanish', 'Qarshilik', 'Tok kuchi', 'Quvvat'], correctIndex: 2 },
+  { question: 'Nyutonning 3-qonuni nima haqida?', options: ['Inersiya', 'F=ma', 'Ta\'sir va aks ta\'sir kuchlari teng', 'Gravitatsiya'], correctIndex: 2 },
+  { question: 'Bosim formulasi qanday?', options: ['P = F/S', 'P = F \u00d7 S', 'P = F + S', 'P = S/F'], correctIndex: 0 },
+  { question: 'Atom yadrosida nima joylashgan?', options: ['Elektronlar', 'Protonlar va neytronlar', 'Faqat protonlar', 'Faqat neytronlar'], correctIndex: 1 },
+  { question: 'Mexanik ish qaysi birlikda o\'lchanadi?', options: ['Nyuton', 'Joul', 'Vatt', 'Paskal'], correctIndex: 1 },
+  { question: 'Quvvat formulasi qanday?', options: ['P = A/t', 'P = A \u00d7 t', 'P = F/t', 'P = mv'], correctIndex: 0 },
+  { question: 'Ovoz tovushi vakuumda tarqaladimi?', options: ['Ha', 'Yo\'q', 'Faqat kuchli bo\'lsa', 'Faqat past haroratda'], correctIndex: 1 },
+  { question: 'Gravitatsiya kuchi nimaga bog\'liq?', options: ['Faqat massa', 'Massa va masofa', 'Faqat masofa', 'Rangga'], correctIndex: 1 },
+  { question: 'Elektr zanjirida rezistorlar ketma-ket ulanganda umumiy qarshilik qanday topiladi?', options: ['R = R\u2081 + R\u2082', 'R = R\u2081 \u00d7 R\u2082', '1/R = 1/R\u2081 + 1/R\u2082', 'R = R\u2081 \u2212 R\u2082'], correctIndex: 0 },
+  { question: 'Molekulalar harakati haroratga qanday bog\'liq?', options: ['Bog\'liq emas', 'Harorat oshsa, harakat tezlashadi', 'Harorat oshsa, harakat sekinlashadi', 'Faqat gazlarda bog\'liq'], correctIndex: 1 },
+  { question: 'Sinishi qonuni qaysi hodisaga tegishli?', options: ['Tovush', 'Yorug\'lik', 'Elektr', 'Magnit'], correctIndex: 1 },
+  { question: '1 Joul nimaga teng?', options: ['1 N\u00b7m', '1 kg\u00b7m', '1 N/m', '1 W\u00b7s\u00b2'], correctIndex: 0 },
+  { question: 'Erkin tushish paytida jism qanday harakat qiladi?', options: ['Tekis', 'Tezlanuvchan', 'Sekinlanuvchan', 'Aylanma'], correctIndex: 1 },
+  { question: 'Magnit maydon nima hosil qiladi?', options: ['Faqat statik zaryad', 'Harakatlanuvchi zaryadlar (tok)', 'Faqat issiqlik', 'Faqat yorug\'lik'], correctIndex: 1 },
+  { question: 'Impuls (miqdor harakat) formulasi qanday?', options: ['p = mv', 'p = m/v', 'p = mgh', 'p = ma'], correctIndex: 0 },
+  { question: 'Bir xil elektr zaryadlari bir-biriga qanday ta\'sir qiladi?', options: ['Tortadi', 'Itaradi', 'Ta\'sir qilmaydi', 'Aylanadi'], correctIndex: 1 },
+  { question: 'Mexanik energiya nimalardan iborat?', options: ['Kinetik + potensial', 'Faqat kinetik', 'Faqat potensial', 'Issiqlik + yorug\'lik'], correctIndex: 0 },
+]
+
+export default physics

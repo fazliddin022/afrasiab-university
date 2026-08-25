@@ -1,0 +1,36 @@
+import type { Question } from './types'
+
+const english: Question[] = [
+  { question: 'She ___ to school every day.', options: ['go', 'goes', 'going', 'gone'], correctIndex: 1 },
+  { question: 'Choose the correct plural form of "child".', options: ['childs', 'childes', 'children', 'childrens'], correctIndex: 2 },
+  { question: 'I have ___ apple in my bag.', options: ['a', 'an', 'the', 'no article'], correctIndex: 1 },
+  { question: '"Beautiful" is a/an ___.', options: ['noun', 'verb', 'adjective', 'adverb'], correctIndex: 2 },
+  { question: 'They ___ finished their homework yet.', options: ["haven't", "don't", "isn't", "aren't"], correctIndex: 0 },
+  { question: 'What is the opposite of "difficult"?', options: ['hard', 'easy', 'complex', 'tough'], correctIndex: 1 },
+  { question: 'She is ___ than her sister.', options: ['tall', 'taller', 'tallest', 'more tall'], correctIndex: 1 },
+  { question: 'If it rains, I ___ stay home.', options: ['will', 'would', 'am', 'was'], correctIndex: 0 },
+  { question: 'Choose the correct sentence.', options: ['He don\'t like tea.', 'He doesn\'t likes tea.', 'He doesn\'t like tea.', 'He not like tea.'], correctIndex: 2 },
+  { question: 'The book is ___ the table.', options: ['on', 'in', 'at', 'to'], correctIndex: 0 },
+  { question: 'Past tense of "go" is:', options: ['goed', 'gone', 'went', 'going'], correctIndex: 2 },
+  { question: 'Which word is a synonym for "happy"?', options: ['sad', 'joyful', 'angry', 'tired'], correctIndex: 1 },
+  { question: 'We ___ dinner when you called.', options: ['have', 'had', 'were having', 'has'], correctIndex: 2 },
+  { question: 'Choose the correct question form.', options: ['Where you are going?', 'Where are you going?', 'Where you going?', 'Where going you are?'], correctIndex: 1 },
+  { question: '"Quickly" is a/an ___.', options: ['noun', 'adjective', 'adverb', 'pronoun'], correctIndex: 2 },
+  { question: 'This is the ___ book I have ever read.', options: ['good', 'better', 'best', 'well'], correctIndex: 2 },
+  { question: 'Choose the correct article: "___ sun rises in the east."', options: ['A', 'An', 'The', 'No article'], correctIndex: 2 },
+  { question: 'I ___ my homework already.', options: ['do', 'did', 'have done', 'doing'], correctIndex: 2 },
+  { question: 'Which sentence uses passive voice?', options: ['She wrote a letter.', 'A letter was written by her.', 'She is writing.', 'She will write.'], correctIndex: 1 },
+  { question: 'Choose the correct spelling.', options: ['recieve', 'receive', 'receeve', 'receve'], correctIndex: 1 },
+  { question: 'He is interested ___ learning languages.', options: ['on', 'at', 'in', 'for'], correctIndex: 2 },
+  { question: 'What is the plural of "mouse" (animal)?', options: ['mouses', 'mice', 'mices', 'mouse'], correctIndex: 1 },
+  { question: 'Choose the correct modal verb: "You ___ see a doctor."', options: ['should', 'shall', 'will', 'do'], correctIndex: 0 },
+  { question: 'The opposite of "increase" is:', options: ['raise', 'decrease', 'grow', 'expand'], correctIndex: 1 },
+  { question: 'By next year, she ___ her studies.', options: ['will finish', 'will have finished', 'finishes', 'finished'], correctIndex: 1 },
+  { question: 'Which one is a conjunction?', options: ['quickly', 'and', 'beautiful', 'run'], correctIndex: 1 },
+  { question: 'I wish I ___ more time.', options: ['have', 'had', 'has', 'having'], correctIndex: 1 },
+  { question: 'Choose the correct comparative: "This is ___ than that one."', options: ['good', 'gooder', 'better', 'best'], correctIndex: 2 },
+  { question: 'She said she ___ come tomorrow.', options: ['will', 'would', 'can', 'shall'], correctIndex: 1 },
+  { question: 'Which word means "very tired"?', options: ['exhausted', 'excited', 'annoyed', 'curious'], correctIndex: 0 },
+]
+
+export default english

@@ -1,0 +1,36 @@
+import type { Question } from './types'
+
+const math: Question[] = [
+  { question: '2x + 5 = 15 bo\'lsa, x nechaga teng?', options: ['5', '10', '4', '7'], correctIndex: 0 },
+  { question: '3\u00b2 + 4\u00b2 nechaga teng?', options: ['25', '12', '49', '7'], correctIndex: 0 },
+  { question: 'To\'g\'ri to\'rtburchakning yuzi qanday topiladi?', options: ['a + b', 'a \u00d7 b', '2(a + b)', 'a\u00b2'], correctIndex: 1 },
+  { question: '(x + 3)(x \u2212 3) ifodasi nimaga teng?', options: ['x\u00b2 \u2212 9', 'x\u00b2 + 9', 'x\u00b2 \u2212 6x + 9', 'x\u00b2'], correctIndex: 0 },
+  { question: '15 ning 20% qancha bo\'ladi?', options: ['2', '3', '4', '5'], correctIndex: 1 },
+  { question: 'Uchburchak burchaklari yig\'indisi necha gradus?', options: ['90\u00b0', '180\u00b0', '270\u00b0', '360\u00b0'], correctIndex: 1 },
+  { question: '\u221a144 nechaga teng?', options: ['10', '11', '12', '14'], correctIndex: 2 },
+  { question: 'f(x) = 2x \u2212 1 funksiyada f(3) nechaga teng?', options: ['4', '5', '6', '7'], correctIndex: 1 },
+  { question: 'Doira yuzi qaysi formula bilan topiladi?', options: ['2\u03c0r', '\u03c0r\u00b2', '\u03c0d', 'r\u00b2'], correctIndex: 1 },
+  { question: '5! (5 faktorial) nechaga teng?', options: ['20', '60', '120', '25'], correctIndex: 2 },
+  { question: '1/2 + 1/3 nechaga teng?', options: ['2/5', '5/6', '1/5', '3/5'], correctIndex: 1 },
+  { question: 'x\u00b2 = 49 tenglamaning yechimlari nima?', options: ['x = 7', 'x = \u00b17', 'x = 49', 'x = \u221249'], correctIndex: 1 },
+  { question: 'Arifmetik progressiyada a\u2081=2, d=3 bo\'lsa, a\u2084 nechaga teng?', options: ['11', '8', '14', '9'], correctIndex: 0 },
+  { question: 'log\u2082 8 nechaga teng?', options: ['2', '3', '4', '8'], correctIndex: 1 },
+  { question: '2 dan 10 gacha bo\'lgan juft sonlar nechta?', options: ['3', '4', '5', '6'], correctIndex: 2 },
+  { question: 'Kub hajmi qaysi formula bilan topiladi?', options: ['a\u00b2', 'a\u00b3', '6a\u00b2', '3a'], correctIndex: 1 },
+  { question: '0.75 kasr shaklida qanday yoziladi?', options: ['1/2', '3/4', '2/3', '4/5'], correctIndex: 1 },
+  { question: 'sin 90\u00b0 nechaga teng?', options: ['0', '0.5', '1', '\u221a2/2'], correctIndex: 2 },
+  { question: '3x \u2212 7 = 2x + 1 tenglamada x nechaga teng?', options: ['6', '7', '8', '9'], correctIndex: 2 },
+  { question: '100 ning kvadrat ildizi nechaga teng?', options: ['10', '100', '50', '20'], correctIndex: 0 },
+  { question: '4/8 kasrni qisqartirsak nima chiqadi?', options: ['1/4', '1/2', '2/3', '1/3'], correctIndex: 1 },
+  { question: 'To\'g\'ri burchakli uchburchakda gipotenuza qanday topiladi?', options: ['a + b', 'a \u2212 b', '\u221a(a\u00b2+b\u00b2)', 'a \u00d7 b'], correctIndex: 2 },
+  { question: '2\u00b3 \u00d7 2\u00b2 nechaga teng?', options: ['16', '32', '64', '2\u2075'], correctIndex: 1 },
+  { question: 'y = 3x + 2 chiziqning burchak koeffitsienti nechaga teng?', options: ['2', '3', '5', '1'], correctIndex: 1 },
+  { question: '90 ning 1/3 qismi nechaga teng?', options: ['20', '25', '30', '45'], correctIndex: 2 },
+  { question: 'Ikki parallel to\'g\'ri chiziq kesishadimi?', options: ['Ha, doim', 'Yo\'q, hech qachon', 'Ba\'zan', 'Faqat 3D da'], correctIndex: 1 },
+  { question: '(2, 3) va (5, 7) nuqtalar orasidagi masofa nechaga teng?', options: ['4', '5', '6', '7'], correctIndex: 1 },
+  { question: '7 ning 3-darajasi nechaga teng?', options: ['21', '49', '343', '147'], correctIndex: 2 },
+  { question: 'Nol bilan bo\'lish natijasi qanday?', options: ['0', '1', 'Aniqlanmagan', 'Cheksizlik'], correctIndex: 2 },
+  { question: 'x\u00b2 \u2212 5x + 6 = 0 tenglamaning ildizlari?', options: ['2, 3', '1, 6', '\u22122, \u22123', '3, 4'], correctIndex: 0 },
+]
+
+export default math

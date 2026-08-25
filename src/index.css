@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+:root,
+[data-theme="dark"] {
+  --page-bg: #0D0C08;
+  --text-primary: #F5EFE0;
+  --text-secondary: #B8AF9A;
+  --border-color: #2E2818;
+  --border-hover: #C99A2E;
+  --tile-bg: #201C11;
+  --accent: #EFC15A;
+  --accent-hover: #F5DDA0;
+  --accent-ink: #0D0C08;
+  --accent-soft: rgba(239, 193, 90, 0.1);
+  --grid-line: #EFC15A;
+    --grid-line: #EFC15A;
+  --bg-line-opacity: 0.22;
+  --bg-blob-opacity: 1;
+}
+
+[data-theme="light"] {
+  --page-bg: #FAF7EF;
+  --text-primary: #2A2214;
+  --text-secondary: #6B5F45;
+  --border-color: #E4DCC5;
+  --border-hover: #C99A2E;
+  --tile-bg: #F0E9D6;
+  --accent: #EFC15A;
+  --accent-hover: #C99A2E;
+  --accent-ink: #0D0C08;
+  --accent-soft: rgba(201, 154, 46, 0.22);
+  --grid-line: #2A2214;
+  --bg-line-opacity: 0.28;
+  --bg-blob-opacity: 1;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatBlob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-20px, 20px) scale(1.08); }
+}
+
+@keyframes pulseRing {
+  0% { box-shadow: 0 0 0 0 rgba(239, 193, 90, 0.35); }
+  100% { box-shadow: 0 0 0 14px rgba(239, 193, 90, 0); }
+}
+
+@keyframes lineFlow {
+  to { stroke-dashoffset: -200; }
+}
+
+@keyframes nodePulse {
+  0%, 100% { opacity: 0.25; r: 2.5; }
+  50% { opacity: 0.9; r: 3.5; }
+}
+
+.stat-card {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.35s ease, border-color 0.3s ease;
+}
+
+.stat-card.stat-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+}
+
+.faculty-card {
+  position: relative;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s ease, transform 0.4s ease, border-color 0.3s ease;
+  overflow: hidden;
+}
+
+.faculty-card.faculty-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faculty-card:hover {
+  border-color: var(--border-hover);
+}
+
+.faculty-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(160px circle at var(--mx, 50%) var(--my, 50%), var(--accent-soft), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.faculty-card:hover::before {
+  opacity: 1;
+}
+
+.faculty-arrow {
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.faculty-card:hover .faculty-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.admission-step {
+  position: relative;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s ease, transform 0.4s ease, border-color 0.3s ease;
+}
+
+.admission-step.admission-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.admission-step:hover {
+  border-color: var(--border-hover);
+}
+
+.admission-connector {
+  position: absolute;
+  top: 24px;
+  left: 100%;
+  width: 24px;
+  height: 1px;
+  background: var(--border-color);
+  overflow: hidden;
+}
+
+.admission-connector::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease 0.3s;
+}
+
+.admission-connector.admission-visible::after {
+  transform: scaleX(1);
+}
+
+.admission-badge {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.admission-step:hover .admission-badge {
+  transform: scale(1.15) rotate(-8deg);
+}
+
+.subject-card {
+  position: relative;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.4s ease, border-color 0.3s ease;
+  overflow: hidden;
+}
+
+.subject-card.subject-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.subject-card:hover {
+  border-color: var(--border-hover);
+}
+
+.subject-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(180px circle at var(--mx, 50%) var(--my, 50%), var(--accent-soft), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.subject-card:hover::before {
+  opacity: 1;
+}
+
+.subject-card.subject-picked {
+  transform: scale(0.96);
+  opacity: 0.6;
+}
+
+.subject-icon-tile {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.subject-card:hover .subject-icon-tile {
+  transform: scale(1.1) rotate(-6deg);
+}
